@@ -1,1 +1,1 @@
-ReDaily - GitHub Pages https://vzhukovskaya.github.io/ReDaily/
+GitHub Pages - ReDaily https://vzhukovskaya.github.io/ReDaily/
