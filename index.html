@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReDaily</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/normalize.css">
 </head>
 
 <body>
@@ -38,24 +38,18 @@
                         <li class="header_item">
                             <a href="#" class="header_link">Contacts</a>
                         </li>
-                        <li class="header_item">
-                            <a href="#" class="header_link">
-                                <form class="select" action="">
-                                    <select name="languages" id="">
-                                        <option selected="selected" value="#">English</option>
-                                        <option value="#">Deutsch</option>
-                                        <option value="#">Italiano</option>
-                                        <option value="#">Français</option>
-                                    </select>
-                                </form>
-                            </a>
-                        </li>
-                        <li class="header_item">
-                            <a href="#" class="header_link">
-                                <img src="./images/basket.vector02.svg" alt="your basket">
-                            </a>
-                        </li>
                     </ul>
+                    <form class="select" action="">
+                        <select name="languages" id="">
+                            <option selected="selected" value="#">English</option>
+                            <option value="#">Deutsch</option>
+                            <option value="#">Italiano</option>
+                            <option value="#">Français</option>
+                        </select>
+                    </form>
+                    <a href="#" class="header_link">
+                        <img src="./images/basket.vector02.svg" alt="your basket">
+                    </a>
                 </nav>
             </div>
         </div>
@@ -63,7 +57,7 @@
     <!-- Main -->
     <div class="hero">
         <div class="hero_img" style="background-image: url(./images/hero.image.jpg);">
-            <div class="descr">
+            <div class="descr container">
                 <h1 class="hero_title">simple <span>habits</span> matter</h1>
                 <p class="hero_text">We made eco friendliness easy and accessible. With love and care, ReDaily.</p>
                 <button class="hero-btn">
@@ -293,7 +287,6 @@
         </div>
     </footer>
 
-    <script src="./script/script.js"></script>
     <script src="https://kit.fontawesome.com/944885f069.js" crossorigin="anonymous"></script>
 </body>
 
