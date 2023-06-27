@@ -52,6 +52,7 @@ header {
 
 .header-nav {
     display: flex;
+    width: 800px;
     align-items: center;
     list-style-type: none;
     padding-left: 0;
@@ -238,12 +239,12 @@ header {
     font-size: 14px;
     font-weight: 700;
     color: #E77622;
-    margin-top: 30px;
 }
 
 .variant-one p::before,
 .variant-two p::before,
-.variant-three p::before {
+.variant-three p::before,
+.general p::before {
     content: '€10';
     font-weight: 400;
     text-decoration: line-through;
@@ -752,7 +753,7 @@ header {
 .products_img {
     background-image: url(../images/ourProducts/ourProducts.bg.jpg);
     width: 100%;
-    height: 920px;
+    height: 620px;
     top: 80px;
     background-repeat: no-repeat;
     object-fit: cover;
@@ -770,10 +771,186 @@ header {
     font-weight: 400;
     color: #F3E89F;
     text-transform: uppercase;
+    opacity: 90%;
+    margin-left: 90px;
 }
 
 .products_title span {
     font-weight: 700;
+}
+
+/* Personal Care */
+
+.grid-elements {
+    display: grid;
+    grid-template-columns: repeat(4, 330px);
+    grid-template-rows: repeat(2, 555px);
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.general {
+    margin-top: 0;
+    text-align: center;
+}
+
+.care-title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #4C5930;
+    text-transform: uppercase;
+    opacity: 80%;
+    margin-top: 120px;
+}
+
+.care-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: 35px;
+    gap: 30px;
+}
+
+.care-menu a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #E77622;
+    text-decoration: none;
+    margin-right: 2px;
+}
+
+.care-menu a:hover {
+    font-weight: 700;
+}
+
+.grid-btn_block {
+    text-align: center;
+}
+
+.grid-btn {
+    background-color: #FFFF;
+    padding: 19px 18px;
+    width: 255px;
+    color: #E77622;
+    border: 2px solid #E77622;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 130px;
+    transition: 0.5s;
+    margin-bottom: 36px;
+}
+
+.grid-btn:hover {
+    border: none;
+    padding: 19px 18px;
+    background: linear-gradient(0deg, rgba(234, 149, 39, 0.8), rgba(213, 224, 168, 0.8));
+    color: #FBF8E7;
+}
+
+/*  Products Bundles  */
+.products-bundles_title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #4C5930;
+    opacity: 80%;
+    margin-top: 241px;
+    text-transform: uppercase;
+}
+
+.product-bundles_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 403px);
+    grid-template-rows: repeat(2, 600px);
+    justify-content: center;
+    gap: 100px;
+    margin-top: 35px;
+}
+
+.elem {
+    text-align: center;
+}
+
+.elem_title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #E77622;
+    margin-top: 35px;
+    text-transform: uppercase;
+}
+
+.elem span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.elem p {
+    font-size: 24px;
+    font-weight: 700;
+    color: #4C5930;
+}
+
+.elem p::before {
+    content: '€25';
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: line-through;
+    margin-right: 5px;
+    color: #C0C0C0;
+}
+
+/* Subscribe Grid */
+
+.subscribe-grid {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(3, 76px);
+    justify-items: center;
+    margin: 327px auto 125px;
+}
+
+.subscribe-grid_title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #E77622;
+    opacity: 90%;
+    margin: 0;
+}
+
+.subscribe-grid_input {
+    width: 664px;
+    height: 70px;
+    font-size: 16px;
+    font-weight: 300;
+    border: 2px solid #E77622;
+    padding-left: 35px;
+}
+
+.subscribe-grid_input::placeholder {
+    text-align: start;
+}
+
+.subscribe-grid_input:focus {
+    outline: none;
+}
+
+.subscribe-grid_btn {
+    width: 266px;
+    height: 76px;
+    font-size: 20px;
+    font-weight: 700;
+    background: linear-gradient(0deg, rgba(68, 141, 110, 0.8), rgba(231, 205, 153, 0.8));
+    color: #FBF8E7;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.subscribe-grid_btn:hover {
+    background-color: #4C5930;
 }
 
 /* Mission Page */
@@ -805,6 +982,7 @@ header {
     font-weight: 300;
     color: #F3E89F;
     text-transform: uppercase;
+    margin-top: 127px;
 }
 
 .mission_title span {

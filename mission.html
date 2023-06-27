@@ -15,16 +15,16 @@
     <header>
         <div class="container">
             <div class="header">
-                <a href="#" class="logo">
+                <a href="index.html" class="logo">
                     <img src="./images/main.logo.svg" alt="redaily">
                 </a>
                 <nav class="menu">
                     <ul class="header-nav">
                         <li class="header_item">
-                            <a href="#" class="header_link">Our products</a>
+                            <a href="products.html" class="header_link">Our products</a>
                         </li>
                         <li class="header_item">
-                            <a href="#" class="header_link">Our mission</a>
+                            <a href="mission.html" class="header_link">Our mission</a>
                         </li>
                         <li class="header_item">
                             <a href="#" class="header_link">How it works</a>
@@ -38,25 +38,20 @@
                         <li class="header_item">
                             <a href="#" class="header_link">Contacts</a>
                         </li>
-                        <li class="header_item">
-                            <a href="#" class="header_link">
-                                <form class="select" action="">
-                                    <select name="languages" id="">
-                                        <option selected="selected" value="#">English</option>
-                                        <option value="#">Deutsch</option>
-                                        <option value="#">Italiano</option>
-                                        <option value="#">Français</option>
-                                    </select>
-                                </form>
-                            </a>
-                        </li>
-                        <li class="header_item">
-                            <a href="#" class="header_link">
-                                <img src="./images/basket.vector02.svg" alt="your basket">
-                            </a>
-                        </li>
                     </ul>
+                    <form class="select" action="">
+                        <select name="languages" id="">
+                            <option selected="selected" value="#">English</option>
+                            <option value="#">Deutsch</option>
+                            <option value="#">Italiano</option>
+                            <option value="#">Français</option>
+                        </select>
+                    </form>
+                    <a href="#" class="header_link">
+                        <img src="./images/basket.vector02.svg" alt="your basket">
+                    </a>
                 </nav>
+                <button class="header_menu" onclick="openModalMenu()"></button>
             </div>
         </div>
     </header>
@@ -199,6 +194,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="/script/script.js"></script>
     <script src="https://kit.fontawesome.com/944885f069.js" crossorigin="anonymous"></script>
 </body>
 

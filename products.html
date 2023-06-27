@@ -15,16 +15,16 @@
     <header>
         <div class="container">
             <div class="header">
-                <a href="#" class="logo">
+                <a href="index.html" class="logo">
                     <img src="./images/main.logo.svg" alt="redaily">
                 </a>
                 <nav class="menu">
                     <ul class="header-nav">
                         <li class="header_item">
-                            <a href="#" class="header_link">Our products</a>
+                            <a href="products.html" class="header_link">Our products</a>
                         </li>
                         <li class="header_item">
-                            <a href="#" class="header_link">Our mission</a>
+                            <a href="mission.html" class="header_link">Our mission</a>
                         </li>
                         <li class="header_item">
                             <a href="#" class="header_link">How it works</a>
@@ -38,25 +38,20 @@
                         <li class="header_item">
                             <a href="#" class="header_link">Contacts</a>
                         </li>
-                        <li class="header_item">
-                            <a href="#" class="header_link">
-                                <form class="select" action="">
-                                    <select name="languages" id="">
-                                        <option selected="selected" value="#">English</option>
-                                        <option value="#">Deutsch</option>
-                                        <option value="#">Italiano</option>
-                                        <option value="#">Français</option>
-                                    </select>
-                                </form>
-                            </a>
-                        </li>
-                        <li class="header_item">
-                            <a href="#" class="header_link">
-                                <img src="./images/basket.vector02.svg" alt="your basket">
-                            </a>
-                        </li>
                     </ul>
+                    <form class="select" action="">
+                        <select name="languages" id="">
+                            <option selected="selected" value="#">English</option>
+                            <option value="#">Deutsch</option>
+                            <option value="#">Italiano</option>
+                            <option value="#">Français</option>
+                        </select>
+                    </form>
+                    <a href="#" class="header_link">
+                        <img src="./images/basket.vector02.svg" alt="your basket">
+                    </a>
                 </nav>
+                <button class="header_menu" onclick="openModalMenu()"></button>
             </div>
         </div>
     </header>
@@ -68,7 +63,143 @@
             </div>
         </div>
     </div>
+    <!-- Personal care -->
+    <section class="care container">
+        <h2 class="care-title">Personal Care</h2>
+        <nav class="care-menu">
+            <a href="#">BODY WASH</a>
+            <a href="#">HAND WASH</a>
+            <a href="#">SHAMPOO</a>
+            <a href="#">HAIR RINSE</a>
+        </nav>
+        <div class="grid-elements">
+            <div class="general">
+                <img src="./images/maskgroup.svg" alt="">
+                <h3 class="product-img_title">DWEBERRY</h3>
+                <span>BODY WASH</span><br>
+                <p>€5</p>
+            </div>
+            <div class="general">
+                <img src="./images/maskgroup.svg" alt="">
+                <h3 class="product-img_title">DWEBERRY</h3>
+                <span>BODY WASH</span><br>
+                <p>€5</p>
+            </div>
+            <div class="general">
+                <img src="./images/maskgroup.svg" alt="">
+                <h3 class="product-img_title">DWEBERRY</h3>
+                <span>BODY WASH</span><br>
+                <p>€5</p>
+            </div>
+            <div class="general">
+                <img src="./images/maskgroup.svg" alt="">
+                <h3 class="product-img_title">DWEBERRY</h3>
+                <span>BODY WASH</span><br>
+                <p>€5</p>
+            </div>
+            <div class="general second-row">
+                <img src="./images/maskgroup.svg" alt="">
+                <h3 class="product-img_title">DWEBERRY</h3>
+                <span>BODY WASH</span><br>
+                <p>€5</p>
+            </div>
+            <div class="general second-row">
+                <img src="./images/maskgroup.svg" alt="">
+                <h3 class="product-img_title">DWEBERRY</h3>
+                <span>BODY WASH</span><br>
+                <p>€5</p>
+            </div>
+            <div class="general second-row">
+                <img src="./images/maskgroup.svg" alt="">
+                <h3 class="product-img_title">DWEBERRY</h3>
+                <span>BODY WASH</span><br>
+                <p>€5</p>
+            </div>
+            <div class="general second-row">
+                <img src="./images/maskgroup.svg" alt="">
+                <h3 class="product-img_title">DWEBERRY</h3>
+                <span>BODY WASH</span><br>
+                <p>€5</p>
+            </div>
+        </div>
+        <div class="grid-btn_block">
+            <a href=""><button class="grid-btn">SHOW MORE</button></a>
+        </div>
+    </section>
+    <!-- Products Bundles -->
+    <section class="products-bundles container">
+        <h2 class="products-bundles_title">product bundles</h2>
+        <div class="product-bundles_grid">
+            <div class="elem">
+                <img src="./images/ourProducts/bundles.first.svg" alt="">
+                <h3 class="elem_title">1 bottle + 3x hand wash</h3>
+                <span>bundle a</span><br>
+                <p>€10</p>
+            </div>
+            <div class="elem">
+                <img src="./images/ourProducts/bundles.second.svg" alt="">
+                <h3 class="elem_title">hand wash + body wash</h3>
+                <span>bundle b</span><br>
+                <p>€10</p>
+            </div>
+            <div class="elem">
+                <img src="./images/ourProducts/bundles.second.svg" alt="">
+                <h3 class="elem_title">1 bottle + 3x hand wash</h3>
+                <span>bundle c</span><br>
+                <p>€10</p>
+            </div>
+            <div class="elem">
+                <img src="./images/ourProducts/bundles.second.svg" alt="">
+                <h3 class="elem_title">1 bottle + 3x hand wash</h3>
+                <span>bundle d</span><br>
+                <p>€10</p>
+            </div>
+        </div>
+    </section>
+    <!-- Subscribe Grid -->
+    <article class="subscribe-grid_bg">
+        <div class="subscribe-grid">
+            <h2 class="subscribe-grid_title">SUBSCRIBE</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="subscribe-grid_box">
+                <input class="subscribe-grid_input" type="email" placeholder="Enter your email here">
+                <button class="subscribe-grid_btn" type="submit">SUBMIT</button>
+            </div>
+        </div>
+    </article>
+    <!-- Footer -->
+    <footer class="bg">
+        <div class="container">
+            <div class="footer-bg">
+                <a href="#" class="logo">
+                    <img src="./images/main.logo.svg" alt="redaily">
+                </a>
+                <nav class="menu footer_menu">
+                    <a href="#" class="header_link footer_link">Our products</a>
+                    <a href="#" class="header_link footer_link">Our mission</a>
+                    <a href="#" class="header_link footer_link">How it works</a>
+                    <a href="#" class="header_link footer_link">About Us</a>
+                    <a href="#" class="header_link footer_link">FAQ</a>
+                    <a href="#" class="header_link footer_link">Contacts</a>
+                </nav>
+            </div>
+            <div class="footer-border"></div>
+            <div class="footer_info">
+                <div class="permissions">
+                    <p>&#64; copyright redaily 2022. All rights reserved</p>
+                    <p>Terms of Use</p>
+                    <p>Privacy Policy</p>
+                </div>
+                <div class="social_icons">
+                    <a href="#" class="social_icon-one"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="social_icon-two"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <script src="/script/script.js"></script>
     <script src="https://kit.fontawesome.com/944885f069.js" crossorigin="anonymous"></script>
 </body>
 
